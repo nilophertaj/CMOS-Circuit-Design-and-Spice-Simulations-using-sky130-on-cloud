@@ -16,7 +16,7 @@ The VSD workshop provides a pre-configured cloud development environment through
 2. Click **Code → Codespaces → Create codespace on main**.
 3. Wait a few minutes for the environment to finish loading.
 
-![Codespace Launch](images/codespace-home.png)
+![Codespace Launch](https://github.com/nilophertaj/CMOS-Circuit-Design-and-Spice-Simulations-using-sky130-on-cloud/blob/3086731aab82034744b3ebd4a6da076187bff670/github/codespace.png)
 
 ---
 
@@ -31,7 +31,8 @@ exit
 
 If installed correctly, you’ll see the ngspice version banner confirming installation.
 
-![NGSpice Version](images/ngspice-version.png)
+![NGSpice Version](https://github.com/nilophertaj/CMOS-Circuit-Design-and-Spice-Simulations-using-sky130-on-cloud/blob/3086731aab82034744b3ebd4a6da076187bff670/github/ngspice1.png
+)
 
 ---
 
@@ -55,11 +56,12 @@ The Linux desktop allows you to:
 
 ### Screenshot
 
-![Ports](images/ports.png)
+![Ports](https://github.com/nilophertaj/CMOS-Circuit-Design-and-Spice-Simulations-using-sky130-on-cloud/blob/3086731aab82034744b3ebd4a6da076187bff670/github/port.png
+)
 
 ### Screenshot
 
-![vnc\_lite](images/vnc-lite.png)
+![vnc\_lite](https://github.com/nilophertaj/CMOS-Circuit-Design-and-Spice-Simulations-using-sky130-on-cloud/blob/3086731aab82034744b3ebd4a6da076187bff670/github/vnc_lite.png)
 
 ---
 
