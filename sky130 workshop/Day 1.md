@@ -269,7 +269,30 @@ These parameters are loaded through the SKY130 technology files.
 # 15. First SPICE Simulation (Lab)
 
 In this session, the first transistor-level simulation is performed using NGSpice.
+![pic](https://github.com/nilophertaj/CMOS-Circuit-Design-and-Spice-Simulations-using-sky130-on-cloud/blob/e3849c1fd4ed4fbe19dc3ba9ffab222ddf4c04cc/github/first%20spice/1st%20sim1.png)
 
+![pic](https://github.com/nilophertaj/CMOS-Circuit-Design-and-Spice-Simulations-using-sky130-on-cloud/blob/e3849c1fd4ed4fbe19dc3ba9ffab222ddf4c04cc/github/first%20spice/1st%20sim2.png)
+
+![pic](https://github.com/nilophertaj/CMOS-Circuit-Design-and-Spice-Simulations-using-sky130-on-cloud/blob/e3849c1fd4ed4fbe19dc3ba9ffab222ddf4c04cc/github/first%20spice/1st%20sim3.png)
+```
+vim day1_nfet_idvds_L2_W5.spice
+```
+![pic](https://github.com/nilophertaj/CMOS-Circuit-Design-and-Spice-Simulations-using-sky130-on-cloud/blob/e3849c1fd4ed4fbe19dc3ba9ffab222ddf4c04cc/github/first%20spice/day1.png)
+
+According to the n type characterization, the corners can be divided as
+tt- typical 
+ss- slow slow 
+sf- slow fast
+
+In the netlist description, the transistor level syntax is:
+drain gate source bulk
+
+```
+ngspice day1_nfet_idvds_L2_W5.spice
+plot -vdd#branch
+```
+
+![pic](https://github.com/nilophertaj/CMOS-Circuit-Design-and-Spice-Simulations-using-sky130-on-cloud/blob/e3849c1fd4ed4fbe19dc3ba9ffab222ddf4c04cc/github/first%20spice/idvds.png)
 
 ---
 
