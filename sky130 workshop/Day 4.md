@@ -225,8 +225,14 @@ Higher gain leads to:
 ---
 
 ## LAB 
-![pic]()
+![pic](https://github.com/nilophertaj/CMOS-Circuit-Design-and-Spice-Simulations-using-sky130-on-cloud/blob/feaf79ffb450a236f43ffb5bd4ded086cc57444a/github/d4.png)
 
+x axix: 0.77     y axix: 1.77
+
+x axis : 0.99    y axis : 0.11
+Noise Margin high = Voh-Vih = 1.77- 0.99 = 0.78
+Noise Margin low = Vol-vil = 0.77 - 0.11 = 0.66
+                  
 # 10. Key Observations
 
 * CMOS inverter has two stable logic states.
