@@ -225,7 +225,7 @@ Higher gain leads to:
 ---
 
 ## LAB 
-
+![pic]()
 
 # 10. Key Observations
 
