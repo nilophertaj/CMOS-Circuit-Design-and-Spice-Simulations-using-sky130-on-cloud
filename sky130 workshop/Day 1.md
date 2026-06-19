@@ -11,24 +11,6 @@
 
 ---
 
-# Contents
-
-* CMOS Buffer Characterization
-* NMOS Structure
-* Threshold Voltage (V<sub>TH</sub>)
-* Body Effect
-* Resistive (Linear) Region
-* Saturation Region
-* Drift Current Theory
-* Drain Current Models
-* Pinch-off Condition
-* Introduction to NGSpice
-* SPICE Circuit Description
-* Technology Parameters
-* First SPICE Simulation (Lab)
-
----
-
 # 1. CMOS Buffer Characterization
 
 The delay of a CMOS gate depends mainly on:
@@ -62,7 +44,7 @@ An NMOS is a **four-terminal device** consisting of:
 * Thin SiO₂ oxide layer
 * Polysilicon/Metal gate
 
-![nmos]( )
+![nmos](https://github.com/nilophertaj/CMOS-Circuit-Design-and-Spice-Simulations-using-sky130-on-cloud/blob/a1b2e939d5d850a9c5db664442cf5e50ae45a386/github/first%20sim/nmos.jpg)
 ---
 
 # 3. Threshold Voltage (VTH)
@@ -95,23 +77,23 @@ A conductive channel is formed between source and drain.
 # 4. Body Effect
 
 Increasing the source-to-body voltage (**VSB**) increases the threshold voltage.
+Body Effect Coefficient:
+γ = √(2qεsiNA) / Cox
 
 Threshold voltage equation:
-
-[
-V_T = V_{T0}+\gamma
-\left(
-\sqrt{2\phi_F+V_{SB}}
----------------------
-
-\sqrt{2\phi_F}
-\right)
-]
+```
+Vₜ = Vₜ₀ + γ ( √(2ϕF + VSB) − √(2ϕF) )
+```
 
 Where
 
+* Vₜ = Threshold Voltage
+* Vₜ₀ = Threshold Voltage at VSB = 0
 * γ = Body effect coefficient
 * ϕF = Fermi potential
+* VSB = Source-to-Body Voltage
+
+![body](https://github.com/nilophertaj/CMOS-Circuit-Design-and-Spice-Simulations-using-sky130-on-cloud/blob/a1b2e939d5d850a9c5db664442cf5e50ae45a386/github/first%20sim/body%20effect.jpg)
 
 ### Observation
 
@@ -132,6 +114,7 @@ VGS > VTH
 
 VDS < VGS − VTH
 ```
+![line](https://github.com/nilophertaj/CMOS-Circuit-Design-and-Spice-Simulations-using-sky130-on-cloud/blob/a1b2e939d5d850a9c5db664442cf5e50ae45a386/github/first%20sim/lsat%20reg.jpg)
 
 ### Characteristics
 
@@ -158,15 +141,9 @@ Current increases with
 # 7. Drain Current Model (Linear Region)
 
 The drain current is
-
-[
-I_D=\mu_n C_{ox}\frac{W}{L}
-\left[
-(V_{GS}-V_{TH})V_{DS}
--\frac{V_{DS}^2}{2}
-\right]
-]
-
+```
+ID = μn Cox (W/L) [ (VGS − VTH)VDS − (VDS²/2) ]
+```
 Where
 
 * μₙ = Electron mobility
@@ -193,13 +170,14 @@ Pinch-off occurs when
 ```
 VDS = VGS − VTH
 ```
+![pinch](https://github.com/nilophertaj/CMOS-Circuit-Design-and-Spice-Simulations-using-sky130-on-cloud/blob/a1b2e939d5d850a9c5db664442cf5e50ae45a386/github/first%20sim/pinch%20off.jpg)
 
 At this point,
 
 * Channel disappears near the drain.
 * Current no longer increases linearly.
 * Device enters saturation.
-
+* 
 ---
 
 # 10. Saturation Region
@@ -223,14 +201,9 @@ VDS ≥ VGS − VTH
 # 11. Drain Current Model (Saturation Region)
 
 Ignoring channel-length modulation,
-
-[
-I_D=
-\frac{1}{2}
-\mu_n C_{ox}
-\frac{W}{L}
-(V_{GS}-V_{TH})^2
-]
+```
+ID = (1/2) μn Cox (W/L) (VGS − VTH)²
+```
 
 This is the square-law equation of an NMOS transistor.
 
