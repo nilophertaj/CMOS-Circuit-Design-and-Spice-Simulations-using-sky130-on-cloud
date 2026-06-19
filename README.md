@@ -45,6 +45,11 @@ To visualize simulation plots and waveforms graphically:
 3. Click the forwarded URL.
 4. Select **`vnc_lite.html`**.
 
+![Ports](https://github.com/nilophertaj/CMOS-Circuit-Design-and-Spice-Simulations-using-sky130-on-cloud/blob/3086731aab82034744b3ebd4a6da076187bff670/github/port.png
+)
+
+![vnc\_lite](https://github.com/nilophertaj/CMOS-Circuit-Design-and-Spice-Simulations-using-sky130-on-cloud/blob/3086731aab82034744b3ebd4a6da076187bff670/github/vnc_lite.png)
+
 This opens a Linux desktop directly in your browser.
 
 The Linux desktop allows you to:
@@ -53,11 +58,6 @@ The Linux desktop allows you to:
 * Analyze voltage and current waveforms
 * Run GUI-based EDA tools
 * Interact with graphical simulation windows
-
-![Ports](https://github.com/nilophertaj/CMOS-Circuit-Design-and-Spice-Simulations-using-sky130-on-cloud/blob/3086731aab82034744b3ebd4a6da076187bff670/github/port.png
-)
-
-![vnc\_lite](https://github.com/nilophertaj/CMOS-Circuit-Design-and-Spice-Simulations-using-sky130-on-cloud/blob/3086731aab82034744b3ebd4a6da076187bff670/github/vnc_lite.png)
 
 ---
 
