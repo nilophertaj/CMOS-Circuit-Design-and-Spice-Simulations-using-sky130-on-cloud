@@ -54,12 +54,8 @@ The Linux desktop allows you to:
 * Run GUI-based EDA tools
 * Interact with graphical simulation windows
 
-### Screenshot
-
 ![Ports](https://github.com/nilophertaj/CMOS-Circuit-Design-and-Spice-Simulations-using-sky130-on-cloud/blob/3086731aab82034744b3ebd4a6da076187bff670/github/port.png
 )
-
-### Screenshot
 
 ![vnc\_lite](https://github.com/nilophertaj/CMOS-Circuit-Design-and-Spice-Simulations-using-sky130-on-cloud/blob/3086731aab82034744b3ebd4a6da076187bff670/github/vnc_lite.png)
 
