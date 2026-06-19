@@ -1,0 +1,162 @@
+# Day 5 - CMOS Circuit Design, Power Supply, Design Variations and Robustness
+
+## Objectives
+
+* Design CMOS circuits using the SKY130 technology.
+* Perform SPICE simulations for CMOS circuits.
+* Understand the impact of power supply variations.
+* Study design variations and process corners.
+* Evaluate CMOS inverter robustness under different operating conditions.
+
+---
+
+
+# 1. CMOS Circuit Design
+
+CMOS (Complementary Metal-Oxide-Semiconductor) technology combines **PMOS** and **NMOS** transistors to implement digital logic circuits with **low static power consumption** and **high noise immunity**.
+
+The design flow includes:
+
+* Circuit schematic design
+* Transistor sizing (W/L ratio)
+* SPICE simulation
+* Performance verification
+
+---
+
+# 2. SPICE Simulations
+
+SPICE (Simulation Program with Integrated Circuit Emphasis) is used to verify the functionality and performance of CMOS circuits before fabrication.
+
+Common analyses include:
+
+* DC Analysis
+* Transient Analysis
+* AC Analysis
+* Parameter Sweep
+
+Simulation helps evaluate:
+
+* Output waveform
+* Delay
+* Power consumption
+* Switching characteristics
+
+---
+
+# 3. CMOS Power Supply
+
+The supply voltage (**VDD**) significantly affects CMOS circuit performance.
+
+### Higher VDD
+
+* Faster switching
+* Higher power consumption
+* Increased electric field
+
+### Lower VDD
+
+* Reduced power consumption
+* Lower switching speed
+* Increased propagation delay
+
+Dynamic power consumption is given by:
+
+```text
+Pdynamic = αCLVDD²f
+```
+
+Where:
+
+* **α** = Switching Activity
+* **CL** = Load Capacitance
+* **VDD** = Supply Voltage
+* **f** = Operating Frequency
+
+---
+
+# 4. Design Variations
+
+CMOS circuits experience variations during fabrication and operation.
+
+### Process Variation
+
+Differences in manufacturing may affect:
+
+* Threshold Voltage (VTH)
+* Channel Length (L)
+* Channel Width (W)
+* Oxide Thickness (TOX)
+
+### Voltage Variation
+
+Changes in supply voltage alter:
+
+* Delay
+* Power consumption
+* Switching threshold
+
+### Temperature Variation
+
+Temperature affects:
+
+* Carrier mobility
+* Leakage current
+* Propagation delay
+
+Designs must remain functional under all operating conditions.
+
+---
+
+# 5. Static Behavior of CMOS Inverter
+
+The static behavior is represented by the **Voltage Transfer Characteristic (VTC)**.
+
+Key parameters include:
+
+* VOH – Output High Voltage
+* VOL – Output Low Voltage
+* VIH – Minimum High Input Voltage
+* VIL – Maximum Low Input Voltage
+* VM – Switching Threshold
+
+A steep VTC transition provides:
+
+* High voltage gain
+* Better noise immunity
+* Reliable switching
+
+---
+
+# 6. CMOS Inverter Robustness
+
+Robustness measures the ability of the inverter to operate correctly despite variations in process, voltage, and temperature (PVT).
+
+A robust inverter should provide:
+
+* High Noise Margin
+* Stable Switching Threshold
+* Low Sensitivity to PVT Variations
+* Reliable Logic Levels
+* High Voltage Gain
+
+Factors improving robustness include:
+
+* Proper transistor sizing
+* Balanced PMOS and NMOS strength
+* Stable power supply
+* Careful layout design
+
+---
+
+# 7. Key Observations
+
+* CMOS technology provides low-power and high-performance digital circuits.
+* SPICE simulations validate circuit behavior before fabrication.
+* Power supply directly impacts speed and power consumption.
+* Process, voltage, and temperature variations influence circuit reliability.
+* Robust inverter design ensures stable operation across all conditions.
+
+---
+
+Thank you Kunal Gosh sir from VSD for this valuable classes, i hope i'll be engage and curious to learn more about the semiconductor and VLSI technology in the upcoming days through your sessions. 
