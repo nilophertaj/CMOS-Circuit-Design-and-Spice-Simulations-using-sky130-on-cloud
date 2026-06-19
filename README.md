@@ -72,4 +72,4 @@ The Linux desktop allows you to:
 * Linux Desktop (noVNC)
 
 ---
-
+I would like to express my sincere gratitude to Kunal Ghosh Sir and the VLSI System Design (VSD) team for making this workshop with excellent video quality, well-structured content, and continuous dedication. Their efforts have made learning VLSI concepts practical, engaging, and accessible to aspiring engineers.
