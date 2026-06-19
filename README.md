@@ -1,1 +1,77 @@
-# CMOS-Circuit-Design-and-Spice-Simulations-using-sky130-on-cloud
+# CMOS Circuit Design and SPICE Simulations using SKY130 on Cloud
+
+This repository documents my learning journey through the **VLSI System Design (VSD)** Workshop on **CMOS Circuit Design and SPICE Simulations using the SKY130 on Cloud**.
+
+Throughout this workshop, I will be uploading my daily work, notes, simulations, circuit designs, and observations from **Day 1 to Day 5**.
+
+---
+
+# Environment Setup
+
+## Step 1: Launch GitHub Codespace
+
+The VSD workshop provides a pre-configured cloud development environment through **GitHub Codespaces**.
+
+1. Open the official **VSD CMOS Workshop** repository.
+2. Click **Code → Codespaces → Create codespace on main**.
+3. Wait a few minutes for the environment to finish loading.
+
+![Codespace Launch](images/codespace-home.png)
+
+---
+
+## Step 2: Verify NGSpice Installation
+
+Once the Codespace is ready, open the **Terminal** and type:
+
+```bash
+ngspice
+exit
+```
+
+If installed correctly, you’ll see the ngspice version banner confirming installation.
+
+![NGSpice Version](images/ngspice-version.png)
+
+---
+
+## Step 3: Open the Linux Desktop (noVNC)
+
+To visualize simulation plots and waveforms graphically:
+
+1. Open the **Ports** tab in VS Code.
+2. Locate **Port 6080** under **Forwarded Address**.
+3. Click the forwarded URL.
+4. Select **`vnc_lite.html`**.
+
+This opens a Linux desktop directly in your browser.
+
+The Linux desktop allows you to:
+
+* View NGSpice plots
+* Analyze voltage and current waveforms
+* Run GUI-based EDA tools
+* Interact with graphical simulation windows
+
+### Screenshot
+
+![Ports](images/ports.png)
+
+### Screenshot
+
+![vnc\_lite](images/vnc-lite.png)
+
+---
+
+---
+
+# Tools Used
+
+* GitHub Codespaces
+* Visual Studio Code
+* NGSpice
+* SKY130 PDK
+* Linux Desktop (noVNC)
+
+---
+
